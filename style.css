@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #82616D;
+}
+
+#mtext{
+    /* width: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+}
+
+#mtext h1{
+    white-space: nowrap;
+    color: white;
+    /* text-transform: uppercase; */
+    font-size: 9vw;
+    font-weight: 100;
+    line-height: 1;
+}
+
+
+#mtext h3{
+    white-space: nowrap;
+    color: white;
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 1;
+}
+
+
+
+
+#left{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+#nav{
+    display: flex;
+    gap: 125px;
+    padding: 30px 30px;
+    width: 100%;
+    align-items: center;
+    color: white;
+    /* background-color: red; */
+}
+
+#nav h3{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+}
+
+#centerimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 60%;
+    background-image: url(https://images.unsplash.com/photo-1475048975523-705992b13a68?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    /* background-color: yellow; */
+}
+
+#centerimg #text{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    /* height: 20%;  */
+    top: 105%;
+    /* background-color: #fff; */
+}
+
+#text #textleft{
+    width: 30%;
+    /* height: 100%; */
+    /* background-color: yellow; */
+}
+
+#textleft h5{
+    margin-bottom: 20px;
+    color: white;
+    text-decoration:underline;
+    font-weight: 800;
+}
+
+#text #textright{
+    width: 70%;
+    /* height: 100%; */
+    /* background-color: rgb(255, 0, 179); */
+}
+
+#textright p{
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#leftbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: -8%;
+    left: 6%;
+    transform-origin: 0% 50%;          /* yeh property origin set krne ka kaam krta hai. origin bole toh jha se rotate krna hai woh wala point */
+    transform: rotate(-90deg);
+    /* background-color: red; */
+}
+
+#leftbar h4{
+    /* margin-left: 10%; */
+    width: 100%;
+    letter-spacing: 10px;
+    font-size: 10px;
+}
+
+#leftbar #line{
+    /* margin-right: 10%; */
+    width: 160px;
+    height: 2px;
+    background-color: white;
+}
+
+#center{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(255, 0, 132); */
+    background-image: url(https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#center #card{
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    right: -5%;
+    width: 280px;
+    height: 180px;
+    z-index: 9999;
+    /* background-color: red; */
+}
+
+
+
+#cicon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* gap: 50px; */
+    width: 20%;
+    height: 100%;
+    background-color: white
+}
+
+#cicon i{
+    font-size: 25px;
+}
+
+#cimage{
+    width: 80%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1511044568932-338cba0ad803?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: left;
+}
+
+#right{
+    /* position: relative; */
+    width: 5%;
+    height: 100%;
+    /* background-color: rgb(0, 85, 255); */
+}
+
+#relem{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 65%;
+    /* background-color: yellow; */
+}
+
+#relem i{
+    color: white;
+    font-size: 25px;
+}
+
+#relem #rlink{
+    display: flex;
+    gap: 50px;
+    /* transform-origin: 0% 50%; */
+    transform: translateY(-150px) rotate(-90deg);
+
+}
+
+#rlink a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
